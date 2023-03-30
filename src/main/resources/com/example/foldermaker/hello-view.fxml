@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="357.0" prefWidth="669.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.foldermaker.HelloController">
+   <children>
+      <TextField id="ordernumber" fx:id="orderNumber" alignment="CENTER" layoutX="204.0" layoutY="86.0" prefHeight="44.0" prefWidth="256.0" promptText="Enter order number">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Button id="checkOrderNumber" fx:id="checkOrderNumber" layoutX="292.0" layoutY="157.0" mnemonicParsing="false" onAction="#handleCheckButton" text="Check">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Text fx:id="textTop" fill="#094fe0" layoutX="32.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" visible="false" wrappingWidth="600.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="createNew" layoutX="142.0" layoutY="229.0" mnemonicParsing="false" onAction="#handleCreateButton" text="Create new" textAlignment="CENTER" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="addFoldersButton" layoutX="396.0" layoutY="229.0" mnemonicParsing="false" onAction="#handleAddButton" text="Add folders" textAlignment="CENTER" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <TextField fx:id="newOrderNumber" layoutX="8.0" layoutY="22.0" prefHeight="44.0" prefWidth="205.0" promptText="Enter order number" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="newOrderDescription" layoutX="224.0" layoutY="22.0" prefHeight="44.0" prefWidth="433.0" promptText="Enter description" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <CheckBox fx:id="checkbox01" layoutX="32.0" layoutY="78.0" mnemonicParsing="false" text="01 - Info" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkbox02" layoutX="32.0" layoutY="117.0" mnemonicParsing="false" text="02 - PJD" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkbox03" layoutX="32.0" layoutY="157.0" mnemonicParsing="false" onAction="#handleCheckBox03" text="03 - PDD" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkbox04" layoutX="32.0" layoutY="272.0" mnemonicParsing="false" text="04 - Logistics" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkbox05" layoutX="32.0" layoutY="313.0" mnemonicParsing="false" text="05 - Instalation" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkboxSF" layoutX="80.0" layoutY="213.0" mnemonicParsing="false" onAction="#handleSFCheckBox" text="SF_" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkboxPDF" disable="true" layoutX="187.0" layoutY="191.0" mnemonicParsing="false" text="PDF" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkboxDXF" disable="true" layoutX="186.0" layoutY="233.0" mnemonicParsing="false" text="DXF" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkboxIGS" disable="true" layoutX="272.0" layoutY="233.0" mnemonicParsing="false" text="IGS" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkboxXLSX" disable="true" layoutX="272.0" layoutY="191.0" mnemonicParsing="false" text="XLSX" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkboxCSV" disable="true" layoutX="372.0" layoutY="214.0" mnemonicParsing="false" text="CSV" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="createFolders" layoutX="491.0" layoutY="229.0" mnemonicParsing="false" onAction="#handleCreateFoldersButtons" text="Create Folders" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

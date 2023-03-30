@@ -1,0 +1,4 @@
+.text-input, .text-input:focused {
+    -fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);
+/* Prompt text visibility */
+}
