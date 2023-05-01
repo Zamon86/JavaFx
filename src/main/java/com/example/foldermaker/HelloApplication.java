@@ -15,6 +15,7 @@ public class HelloApplication extends Application {
         scene.getStylesheets().add(String.valueOf(HelloApplication.class.getResource("hello-view.css")));
         stage.setTitle("Folders Maker");
         stage.setScene(scene);
+
         stage.show();
     }
 
